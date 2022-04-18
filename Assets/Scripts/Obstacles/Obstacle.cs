@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public abstract class Obstacle : MonoBehaviour
 {
-
+    protected bool _isTriggered = false;
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out Box box))
@@ -17,5 +17,5 @@ public abstract class Obstacle : MonoBehaviour
        
     }
 
-    public abstract void RemoveBoxes(List<Box> list, Box box, Action<Box> removeMethod);
+    public abstract int RemoveBoxes(Box[]list, Box box, Action<Box> removeMethod);
 }

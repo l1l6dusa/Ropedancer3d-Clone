@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class WreckingBallObstacle : Obstacle
@@ -17,15 +18,25 @@ public class WreckingBallObstacle : Obstacle
         
     }
 
-    public override void RemoveBoxes(List<Box> list, Box box, Action<Box> removeMethod)
+    public override int RemoveBoxes(Box[]  list, Box box, Action<Box> removeMethod)
     {
-        var boxIndex = list.IndexOf(box);
-        var boxesToRemove = list.Count - 1 - boxIndex;
-        var tempList = list.FindAll(x => list.IndexOf(x) >= boxIndex);
+       if(_isTriggered) return 0;
+       var temp = list.ToList().FindAll(x => x.gameObject.activeSelf);
+        var boxIndex = list.ToList().IndexOf(box);
+        var boxesToRemove = temp.Count - 1 - boxIndex;
+        var tempList = temp.FindAll(x => temp.IndexOf(x) >= boxIndex);
         foreach (var itemBox in tempList)
-        {
-            itemBox.gameObject.SetActive(false);
+        { 
             removeMethod(itemBox);
         }
+
+        _isTriggered = true;
+        return tempList.Count;
+        
+
+        
+
+
+
     }
 }

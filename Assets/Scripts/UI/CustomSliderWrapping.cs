@@ -7,22 +7,25 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Slider))]
 public class CustomSliderWrapping : MonoBehaviour
 {
-
+    
     [SerializeField]
-    private ItemHandle itemHandleRight;
+    private ItemContainer itemHandleRight;
     [SerializeField]
-    private ItemHandle itemHandleLeft;
-
+    private ItemContainer itemHandleLeft;
+    [SerializeField]
+    private float _boxWeight;
+    
     private void OnEnable()
     {
-        itemHandleRight._boxAdded += UpdateSlider;
-        itemHandleLeft._boxAdded += UpdateSlider;
+        itemHandleRight.BoxAdded += UpdateSlider;
+        itemHandleLeft.BoxAdded += UpdateSlider;
     }
+    
 
     private void OnDisable()
     {
-        itemHandleRight._boxAdded -= UpdateSlider;
-        itemHandleLeft._boxAdded -= UpdateSlider; 
+        itemHandleRight.BoxAdded -= UpdateSlider;
+        itemHandleLeft.BoxAdded -= UpdateSlider; 
     }
 
     private Slider _slider;
@@ -36,9 +39,9 @@ public class CustomSliderWrapping : MonoBehaviour
         _slider.value = 0;
     }
 
-    public void UpdateSlider(float incrementValue)
+    private void UpdateSlider(int incrementValue)
     {
-        _slider.value += incrementValue;
+        _slider.value += incrementValue/_boxWeight;
     }
     
 }
