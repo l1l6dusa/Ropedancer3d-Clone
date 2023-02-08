@@ -17,15 +17,15 @@ public class CustomSliderWrapping : MonoBehaviour
     
     private void OnEnable()
     {
-        itemHandleRight.BoxAdded += UpdateSlider;
-        itemHandleLeft.BoxAdded += UpdateSlider;
+        itemHandleRight.BoxQuantityChanged += UpdateSlider;
+        itemHandleLeft.BoxQuantityChanged += UpdateSlider;
     }
     
 
     private void OnDisable()
     {
-        itemHandleRight.BoxAdded -= UpdateSlider;
-        itemHandleLeft.BoxAdded -= UpdateSlider; 
+        itemHandleRight.BoxQuantityChanged -= UpdateSlider;
+        itemHandleLeft.BoxQuantityChanged -= UpdateSlider; 
     }
 
     private Slider _slider;

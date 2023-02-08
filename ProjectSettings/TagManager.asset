@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - LevelSegment
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Interactables
   - 
   - 
   - 
