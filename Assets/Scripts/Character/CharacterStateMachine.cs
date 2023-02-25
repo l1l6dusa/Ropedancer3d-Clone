@@ -61,13 +61,12 @@ public class CharacterStateMachine : MonoBehaviour
         if (CurrentState != null)
         {
             _userInputBlocked = true;
+            
             await state.InitializeStateAsync(
                 _character, 
                 this, 
                 Animator, returnTime, 
-                CurrentState.ReturnToDefaultStateAsync(
-                    false, 
-                    float.IsNaN(externalReturnTime)?returnTime:externalReturnTime), ticks);
+                CurrentState.ReturnToDefaultStateImmediateAsunc(), ticks);
             if (postUpdateCallback != null)
             {
                 state.PostUpdateCallBack += postUpdateCallback;

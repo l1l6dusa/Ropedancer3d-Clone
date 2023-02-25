@@ -66,4 +66,25 @@ public class Character : MonoBehaviour
     {
         DefaultPosition += new Vector3(x, y, z);
     }
+
+    public void DecrementBoxes()
+    {
+        if (_leftContainer.BoxQuantity > _rightContainer.BoxQuantity)
+        {
+            if (_leftContainer.BoxQuantity == 0)
+            {
+                return;
+            }
+            _leftContainer.RemoveLastBox();
+            
+        }
+        else
+        {
+            if (_rightContainer.BoxQuantity == 0)
+            {
+                return;
+            }
+            _rightContainer.RemoveLastBox();
+        }
+    }
 }
