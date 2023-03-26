@@ -11,21 +11,21 @@ public class CharacterStateMachine : MonoBehaviour
     private bool _userInputBlocked;
     private Character _character;
     private bool _isInputReceived;
-    private Animator Animator { get; set; }
+    private Animator _animator { get; set; }
     public InputTracker InputTracker { get; private set;}
     public IState CurrentState { get; private set; }
 
     private void Awake()
     {
-        Animator = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
         _character = GetComponent<Character>();
         InputTracker = GetComponent<InputTracker>();
     }
 
     private async void Start()
     {
-        CurrentState = new TorsoRotationState();
-        await CurrentState.InitializeStateAsync(_character, this, Animator, 0.5f);
+        CurrentState = new DefaultState();
+        await CurrentState.InitializeStateAsync(_character, this, _animator, 0f);
     }
 
     private async void Update()
@@ -65,7 +65,7 @@ public class CharacterStateMachine : MonoBehaviour
             await state.InitializeStateAsync(
                 _character, 
                 this, 
-                Animator, returnTime, 
+                _animator, returnTime, 
                 CurrentState.ReturnToDefaultStateImmediateAsunc(), ticks);
             if (postUpdateCallback != null)
             {
@@ -79,7 +79,7 @@ public class CharacterStateMachine : MonoBehaviour
             await state.InitializeStateAsync(
                 _character, 
                 this, 
-                Animator, returnTime);
+                _animator, returnTime);
         }
         _character.MovementUnsubscribe(CurrentState);
         CurrentState = state;

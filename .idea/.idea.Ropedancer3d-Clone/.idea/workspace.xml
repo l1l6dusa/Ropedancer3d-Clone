@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dad263de-e3ec-44c0-bc5c-f9afbf64ac68" name="Changes" comment="Added custom Editor Window script.&#10;Rewrote the lean logic for boxes.">
+    <list default="true" id="dad263de-e3ec-44c0-bc5c-f9afbf64ac68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ropedancer3d-Clone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ropedancer3d-Clone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonPrototype/Materials/PolygonPrototype_Global_Grid_06.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonPrototype/Materials/PolygonPrototype_Global_Grid_06.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonPrototype/Models/Characters.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PolygonPrototype/Models/Characters.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MiddleCenteredSlider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MiddleCenteredSlider.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Character.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -48,10 +54,17 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/109e781b32ec464d8737a667de80574210fc00/68/fbff1d72/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63965ae56af7489797f355b7c1211ab281aa00/80/cfe0f67e/HostView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/685c48cf8f0b48abb797275c046dda6a158a00/b8/62f59f57/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d6232873609549b8a045fa15811a5bd346a800/be/e4ac6f6d/AsyncVoidMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/AnimationSheet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/BoxEmitter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/ItemContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/States/DefaultState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level/Segments/LevelSegment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Effectors/RigEffectorWizard.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
@@ -82,7 +95,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.325&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.32428572&quot;,
     &quot;do_not_show_Android_plugin_suggestion&quot;: &quot;true&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
@@ -248,7 +261,30 @@
       <workItem from="1676843793221" duration="13367000" />
       <workItem from="1676899160029" duration="1374000" />
       <workItem from="1676938258035" duration="19494000" />
-      <workItem from="1677291175690" duration="7162000" />
+      <workItem from="1677291175690" duration="7270000" />
+      <workItem from="1678038953802" duration="1609000" />
+      <workItem from="1678103377696" duration="7558000" />
+      <workItem from="1678145775900" duration="11142000" />
+      <workItem from="1678493674095" duration="596000" />
+      <workItem from="1678582015007" duration="2538000" />
+      <workItem from="1678588131179" duration="9747000" />
+      <workItem from="1678750692683" duration="6009000" />
+      <workItem from="1678841864415" duration="2588000" />
+      <workItem from="1678923752231" duration="1924000" />
+      <workItem from="1679010924085" duration="2623000" />
+      <workItem from="1679148160264" duration="1678000" />
+      <workItem from="1679192937804" duration="1025000" />
+      <workItem from="1679195992083" duration="2129000" />
+      <workItem from="1679276298246" duration="1758000" />
+      <workItem from="1679360195194" duration="5296000" />
+      <workItem from="1679534728698" duration="7117000" />
+      <workItem from="1679604089765" duration="1924000" />
+      <workItem from="1679622496901" duration="4435000" />
+      <workItem from="1679706314875" duration="6912000" />
+      <workItem from="1679764010284" duration="1829000" />
+      <workItem from="1679781527556" duration="8472000" />
+      <workItem from="1679804263162" duration="1272000" />
+      <workItem from="1679838993353" duration="3859000" />
     </task>
     <task id="LOCAL-00001" summary="Initial item handle game logic commit">
       <created>1639968456515</created>
@@ -278,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676829018842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added box removal logic for the elevation segment and the finish segment.">
+      <created>1677333085515</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677333085515</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,36 +360,50 @@
     <MESSAGE value="commit before changes to the boxes" />
     <MESSAGE value="additional files added to git" />
     <MESSAGE value="Added custom Editor Window script.&#10;Rewrote the lean logic for boxes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added custom Editor Window script.&#10;Rewrote the lean logic for boxes." />
+    <MESSAGE value="added box removal logic for the elevation segment and the finish segment." />
+    <option name="LAST_COMMIT_MESSAGE" value="added box removal logic for the elevation segment and the finish segment." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Character/States/ElevationState.cs</url>
-          <line>25</line>
-          <properties documentPath="E:\Unity Projects\Ropedancer3d-Clone\Assets\Scripts\Character\States\ElevationState.cs" initialLine="25" containingFunctionPresentation="method 'InitializeStateAsync'">
+          <url>file://$PROJECT_DIR$/Assets/Editor/BoxWeightSetter.cs</url>
+          <line>39</line>
+          <properties documentPath="E:\Unity Projects\Ropedancer3d-Clone\Assets\Editor\BoxWeightSetter.cs" initialLine="39" containingFunctionPresentation="method 'OnGUI'">
             <startOffsets>
-              <option value="857" />
+              <option value="1582" />
             </startOffsets>
             <endOffsets>
-              <option value="893" />
+              <option value="1629" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterStateMachine.cs</url>
-          <line>60</line>
-          <properties documentPath="E:\Unity Projects\Ropedancer3d-Clone\Assets\Scripts\Character\CharacterStateMachine.cs" initialLine="60" containingFunctionPresentation="method 'SetState'">
+          <line>64</line>
+          <properties documentPath="E:\Unity Projects\Ropedancer3d-Clone\Assets\Scripts\Character\CharacterStateMachine.cs" initialLine="64" containingFunctionPresentation="method 'SetState'">
             <startOffsets>
-              <option value="1739" />
+              <option value="1833" />
             </startOffsets>
             <endOffsets>
-              <option value="1764" />
+              <option value="2033" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Character/Character.cs</url>
+          <line>19</line>
+          <properties documentPath="E:\Unity Projects\Ropedancer3d-Clone\Assets\Scripts\Character\Character.cs" initialLine="19" containingFunctionPresentation="property 'Speed'">
+            <startOffsets>
+              <option value="653" />
+            </startOffsets>
+            <endOffsets>
+              <option value="667" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -359,16 +416,5 @@
         <PinnedItemInfo parentTag="Frame#CharacterStateMachine.FixedUpdate" memberName="this" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
-        <watch expression="_character.GetBoxRatio()" language="C#" />
-        <watch expression="_leftContainer.BoxQuantity" language="C#" />
-        <watch expression="_rightContainer.BoxQuantity" language="C#" />
-        <watch expression="_state.MouseMoved" language="C#" />
-        <watch expression="_stateMachine" />
-        <watch expression="_character.GetBoxRatio()" language="C#" />
-        <watch expression="_character" language="C#" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -13,8 +14,15 @@ public class Character : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float returnTime;
     [SerializeField] private float _horizontalOffset;
+
+    public float Speed
+    {
+        get { return _speed; }
+        set { _speed = value; }
+    }
     
     
+    public event Action StarAdded;
     public Quaternion InitialRotation { get; private set; }
     public Vector3 DefaultPosition { get; private set; }
     public Transform IkSource => _ikSource;
@@ -22,7 +30,6 @@ public class Character : MonoBehaviour
     public float BendSpeed => _bendSpeed;
     public float ReturnTime => returnTime;
     public float HorizontalOffset => _horizontalOffset;
-    public float Speed => _speed;
 
     private void Awake()
     {
@@ -85,6 +92,14 @@ public class Character : MonoBehaviour
                 return;
             }
             _rightContainer.RemoveLastBox();
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent<Coin>(out _))
+        {
+            StarAdded?.Invoke();
         }
     }
 }
